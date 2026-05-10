@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webdevelopment Slider</title>
+    <style>
+        body{
+            background-color: lightsteelblue;
+            font-family: italic, serif;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img class="mySlides" src="img 1.jfif" style="width: 100%; height: 500px;">
+        <img class="mySlides" src="img 2.jfif" style="width: 100%; height: 500px;">
+        <img class="mySlides" src="img 3.jfif" style="width: 100%; height: 500px;">
+        <img class="mySlides" src="img 4.jfif" style="width: 100%; height: 500px;">
+        <img class="mySlides" src="img 5.png" style="width: 100%; height: 500px;">
+        <img class="mySlides" src="img 6.jfif" style="width: 100%; height: 500px;">
+    </section>
+    <center>
+        <h1>Webdevelopment Slider</h1>
+        <p>Web development is the essential process of building and maintaining websites and web applications that run in a
+        browser. It acts as the backbone of the modern internet, transforming creative designs into functional, interactive
+        experiences through a combination of programming, markup, and database management.</p>
+    </center>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+</html>
