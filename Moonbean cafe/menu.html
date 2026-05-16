@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | MoonBean Cafe</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f7efe5;
+        }
+
+        nav {
+            background: #5c3d2e;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1,
+        nav a {
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        .menu-section {
+            width: 85%;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .item {
+            background: #fff7f0;
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
+            background: #5c3d2e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h1>☕ MoonBean Cafe</h1>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="menu-section">
+        <h2>Our Menu</h2>
+
+        <div class="item">
+            <h3>Cappuccino</h3>
+            <p>$5</p>
+        </div>
+
+        <div class="item">
+            <h3>Mocha Latte</h3>
+            <p>$6</p>
+        </div>
+
+        <div class="item">
+            <h3>Chocolate Pancakes</h3>
+            <p>$8</p>
+        </div>
+
+        <div class="item">
+            <h3>Blueberry Cheesecake</h3>
+            <p>$7</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Freshly brewed happiness ☕</p>
+    </footer>
+
+</body>
+
+</html>
