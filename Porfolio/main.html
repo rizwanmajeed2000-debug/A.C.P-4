@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Javeria Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f7ff;
+            color: #333;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            background: #6c63ff;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #dcdcff;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #6c63ff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #6c63ff;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #554bdb;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .skills h2 {
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <h1>Javeria.</h1>
+
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="projets.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+
+        <h2>Hello, I'm <span>Javeria</span> 👋</h2>
+
+        <p>
+            A student who loves coding, designing websites,
+            and learning new tech skills.
+        </p>
+
+        <a href="projets.html" class="btn">View Projects</a>
+
+    </section>
+
+    <section class="skills">
+
+        <h2>My Skills 🚀</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>HTML</h3>
+                <p>I create webpage structures and layouts.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>I style websites with colors and animations.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>I add interaction and functionality to websites.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Javeria Portfolio</p>
+    </footer>
+
+</body>
+
+</html>
